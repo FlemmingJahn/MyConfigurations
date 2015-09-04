@@ -19,10 +19,10 @@ function createLn {
     fi
 
     dir=`pwd`
-    echo     ln $dir/$subDir/$fileName $softLinkFile
     ln $dir/$subDir/$fileName $softLinkFile
 }
 
 
+# Do the creations
 createLn .emacs emacs
 createLn .tmux.conf tmux
